@@ -1,7 +1,8 @@
-package com.ion.xgeeks_android_challenge
+package com.ion.xgeeks_android_challenge.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ion.xgeeks_android_challenge.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +13,9 @@ class MainActivity : AppCompatActivity() {
         if (actionBar != null) {
             actionBar.title = "Ki labs"
         }
+
+        var tags = arrayListOf<String>()
+        tags.addAll(listOf("Kittens", "Dogs"))
+
     }
 }
