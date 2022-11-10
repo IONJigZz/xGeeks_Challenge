@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         var tags = arrayListOf<String>()
         tags.addAll(listOf("Kittens", "Dogs"))
-
+        var com = getResultsByTag()
+        com.co = this
+        com.get(findViewById(R.id.main_recycler), tags)
+        //https://farm{FARMNR}.staticflickr.com/{SERVER}/{ID}_{SECRET}.jpg
     }
 }
